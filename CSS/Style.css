@@ -1,0 +1,406 @@
+:root {
+    --primary-blue: #83e9ed;
+    --primary-green: #b4ed9c;
+    --primary-yellow: #ffea93;
+    --primary-pink: #f8a9a9;
+}
+
+footer {
+    position: absolute;
+    bottom: 0vh;
+    width: auto;  
+    font-size: 12px;
+    margin: 1px auto 1px auto;
+}
+
+body {
+    width: 200vh;
+    margin: auto;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.267), rgba(255, 255, 255, 0.267)), url(../img/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Mohave', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.blocoi {
+    width: 200vh; 
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.336);
+    display: grid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #0000008e;
+    margin: 10px auto 0px auto;
+    grid-template-areas: 
+    "galery bluea pinka yellowa greena";
+}
+
+nav {
+    border-radius: 5px; 
+    font-family: 'Lobster', cursive;
+    display: grid;
+    margin: 0px auto 0px auto;
+    justify-items: left;
+}
+h1 {
+    font-size: 35px; 
+    color: white;
+}
+
+#menu {
+    border-radius: 5px;
+    display: flex;
+    justify-content: right;
+}
+#menu a{
+    margin: 1px 10px 1px 10px;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #0000008e;
+}
+#menu a:hover {
+    transition: 0.2s;
+    box-shadow: 0px 0px 3px #000000;
+    border-radius: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.bluea {
+    background-color: #83e9ed;
+}
+
+.pinka {
+    background-color: #f8a9a9;
+}
+
+.yellowa {
+    background-color: #ffea93;
+}
+
+.greena {
+    background-color: #b4ed9c;
+}
+
+/* imagem */
+.galery {
+    width: 35vh;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.342); 
+    margin: auto auto auto auto;
+    box-shadow: 0px 0px 4px #ffffff;
+    overflow: hidden; 
+    border-radius: 5px;
+    display: grid;
+    grid-column:auto;
+    grid-area: galery;
+    grid-column: galery;
+}
+
+.galery .imgchilds {
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.galery .imgchilds img {
+    width: 100%;
+    box-shadow: 0px 0px 2px #ffffff; 
+    border-radius: 5px;
+}
+
+@keyframes animacao {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+    75% { margin-left: -300%;}
+    95% { margin-left: -300%;}
+    100% { margin-left: -400%;}
+    100% { margin-left: -400%;}
+}
+
+/* blocos pg inicial */
+.blue {
+    width: 35vh;  
+    background-color: var(--primary-blue);
+    display: grid;
+    grid-area: bluea;
+    grid-column: bluea;
+    margin: auto auto auto auto;
+    border-radius: 5px;
+    height: 50vh;
+    box-shadow: 0px 0px 2px #0000008e;
+}
+
+.pink {
+    width: 35vh; 
+    background-color: var(--primary-pink);
+    display: grid;
+    grid-area: pinka;
+    grid-column: pinka;
+    margin: auto auto auto auto;
+    border-radius: 5px;
+    height: 50vh;
+    box-shadow: 0px 0px 2px #0000008e;
+}
+
+.yellow {
+    width: 35vh;  
+    background-color: var(--primary-yellow);
+    display: grid;
+    grid-area: yellowa;
+    grid-column: yellowa;
+    margin: auto auto auto auto;
+    border-radius: 5px;
+    height: 50vh;
+    box-shadow: 0px 0px 2px #0000008e;
+}
+
+.green {
+    width: 35vh;  
+    background-color: var(--primary-green);
+    display: grid;
+    grid-area: greena;
+    grid-column: greena;
+    margin: auto auto auto auto;;
+    border-radius: 5px;
+    height: 50vh;
+    box-shadow: 0px 0px 2px #0000008e;
+}
+
+/* blocos pg quem somos*/
+.blocoqs {
+    width: 200vh; 
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.336);
+    display: grid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #0000008e;
+    margin: 10px auto 0px auto;
+    grid-template-areas: "story contact"
+}
+
+.story {
+    background-color: var(--primary-yellow);
+    width: 125vh;
+    height: 50vh;
+    grid-area: story;
+    margin: 30px auto 20px auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #ffffff;
+}
+
+.contact {
+    background-color: var(--primary-blue);
+    width: 60vh;
+    grid-area: contact;
+    height: 50vh;
+    margin: auto auto auto auto;
+    border-radius: 5px;
+    font-size: medium;
+    box-shadow: 0px 0px 2px #0000008e;
+    color: white;
+}
+
+.contact p{
+    margin: 5px auto 5px auto;
+}
+.contact h2{
+    margin: 5px auto 10px auto;
+}
+
+/* blocos pg colaboradores*/
+.blococol {
+    width: 200vh; 
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.336);
+    display: grid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #0000008e;
+    margin: 10px auto 0px auto;
+    grid-template-areas: "advice school";
+}
+
+.advice {
+    background-color: var(--primary-pink);
+    width: 70vh;
+    grid-area: advice;
+    height: 50vh;
+    margin: auto auto auto auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #0000008e;
+}
+
+.school {
+    background-color: var(--primary-yellow);
+    width: 70vh;
+    grid-area: school;
+    height: 50vh;
+    margin: auto auto auto auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #0000008e;
+}
+
+.school p, .advice p {
+    margin: auto auto auto auto;
+}
+
+/* blocos pg projeto/eventos */
+.bloconc {
+    width: 200vh; 
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.336);
+    display: grid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #0000008e;
+    margin: 10px auto 0px auto;
+    grid-template-areas: "data eventos projetos";  
+}
+
+iframe {
+    width: 70vh;
+    height: 50vh;
+    border-radius: 5px;
+}
+
+.calendario {
+    display: grid;
+    grid-area: data;
+    margin: auto 10px auto 5px;
+}
+
+.eventos {
+    width: 55vh;
+    display: grid;
+    background-color: var(--primary-green);
+    grid-area: eventos;
+    height: 50vh;
+    border-radius: 5px;
+    font-size: large;
+    box-shadow: 0px 0px 2px #0000008e;
+    margin: auto 10px auto 0px;
+}
+
+.projetos {
+    width: 55vh;
+    display: grid;
+    background-color: var(--primary-yellow);
+    grid-area: projetos;
+    height: 50vh;
+    border-radius: 5px;
+    font-size: large;
+    box-shadow: 0px 0px 2px #0000008e;
+    margin: auto 10px auto 0px;
+}
+
+.eventos p {
+    margin: 2vh 1vh 0vh 1vh;
+}
+.projetos p {
+    margin: 2vh 1vh 0vh 1vh;
+}
+
+/* blocos pg projetos*/
+.blocoproj{
+    width: 200vh; 
+    height: 60vh;
+    display: grid;
+    margin: 10px auto 0px auto;
+}
+
+.mural {
+    display: flex;
+}
+
+.proj1 {
+    width: 40vh;  
+    height: 60vh; 
+    background-color: var(--primary-blue);
+    display: grid;
+    margin: auto auto auto auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #0000008e;
+}
+.proj2 {
+    width: 40vh;  
+    height: 60vh;
+    background-color: var(--primary-blue);
+    display: grid;
+    margin: auto auto auto auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #0000008e;
+}
+.proj3 {
+    width: 40vh;  
+    height: 60vh;
+    background-color: var(--primary-blue);
+    grid-column: auto;
+    margin: auto auto auto auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #0000008e;
+}
+.proj4 {
+    width: 40vh;  
+    height: 60vh;
+    background-color: var(--primary-blue);
+    grid-column: auto;
+    margin: auto auto auto auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #0000008e;
+}
+
+/* pg creche sd*/
+.informacoes {
+    width: 120vh;  
+    height: 55vh;
+    background-color: var(--primary-blue);
+    grid-column: auto;
+    margin: auto 0px auto 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #0000008e;
+}
+
+.atividades {
+    width: 70vh;  
+    height: 55vh;
+    background-color: var(--primary-yellow);
+    grid-column: auto;
+    margin: auto 5px auto 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #0000008e;
+}
+
+.informacoes h2, .atividades h2{
+    margin: 1px auto 1px auto;
+}
+
+@media screen and (max-width: 360px)  {
+    
+    body {
+        width: 55vh;
+        margin: auto;
+        height: 360vh;
+    }
+
+    .blocoi {
+        width: 85vh; 
+        height: auto;
+        margin: 10px auto 0px auto;
+    }
+}
